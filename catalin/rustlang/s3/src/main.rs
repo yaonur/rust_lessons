@@ -1,7 +1,7 @@
 #[allow(unused_variables)]
 #[allow(unused_assignments)]
 fn main() {
-    let name: &str = "One";
+    let mut name: &str = "One";
     let age: i32 = 42;
     let million: i32 = 1_000_000;
     println!("{}", million);
@@ -19,5 +19,14 @@ fn main() {
 
     let cat: &str = "cat";
     let dog: &'static str = "dog";
+    let amount: i128 = 2343784294738924327894;
 
+    a_function(&mut name);
+    println!("{}", name);
+
+}
+
+fn a_function(name: &mut &str){
+    println!("{}", name);
+    *name = "Two";
 }
