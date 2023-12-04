@@ -1,5 +1,8 @@
+mod enums;
 mod slices;
+mod structures;
 mod tuples;
+mod generics;
 
 fn main() {
     //arrays
@@ -40,7 +43,7 @@ fn main() {
     println!("numbers after updating index 5:{:?}", numbers);
 
     for number in numbers.iter() {
-        println!("{}", number * number );
+        println!("{}", number * number);
     }
 
     //slices
@@ -48,4 +51,13 @@ fn main() {
 
     //tuples
     tuples::tuples_run();
+
+    //structures
+    structures::structures_run();
+
+    //enums
+    enums::enums_run();
+
+    //generics
+    generics::generics_run();
 }
