@@ -1,8 +1,13 @@
 {
 	"folders": [
 		{
-			"path": "../../../catalin/rustlang/s4-modules"
+			"path": "../../../catalin/rustlang/s5-datatypes"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"rust-analyzer.linkedProjects": [
+			"./Cargo.toml",
+			"./Cargo.toml"
+		]
+	}
 }
