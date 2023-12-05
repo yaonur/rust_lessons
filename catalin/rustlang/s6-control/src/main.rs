@@ -19,7 +19,6 @@ fn main() {
     print_choice(Diamonds);
     print_choice(Spades);
     print_choice(Clubs);
-
     country(44);
 
     for i in 0..10 {
