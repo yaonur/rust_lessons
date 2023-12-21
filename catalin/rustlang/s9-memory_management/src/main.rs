@@ -1,4 +1,5 @@
 mod life_times;
+mod reference_counted_vars;
 fn main() {
     let i = 5;
     let j = i;
