@@ -1,5 +1,5 @@
 <script lang="ts">
-    import type { PageData } from './$types';
+    import {greet} from '$lib/pkg/wasm_sum_bg'
     
-    export let data: PageData;
+    greet();
 </script>

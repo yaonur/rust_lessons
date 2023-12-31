@@ -1,11 +1,16 @@
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
 import { paraglide } from "@inlang/paraglide-js-adapter-vite"
+import wasm from 'vite-plugin-wasm'
+import topLevelAwait from 'vite-plugin-top-level-await'
 import path from 'path'
 
 // noinspection JSUnusedGlobalSymbols
 export default defineConfig({
-	plugins: [sveltekit(),
+	plugins: [
+		wasm(),
+		topLevelAwait(),
+		sveltekit(),
 		paraglide({
 			project: "./project.inlang",
 			outdir: "./src/paraglide",

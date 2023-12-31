@@ -25,7 +25,7 @@ export const handle: Handle = async ({ event, resolve }) => {
 
 	const response = await resolve(event);
 	const setCookie = response.headers.get('Set-Cookie');
-    console.log("Set-Cookie header:", setCookie);
+    // console.log("Set-Cookie header:", setCookie);
 
 	// console.log("response in hook:",response)
 	// const setCookie = response.headers.get("auth-token");
