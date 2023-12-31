@@ -1,0 +1,1 @@
+export { default as TestCompCn } from "./TestComp.svelte";
