@@ -1,0 +1,19 @@
+{
+  "name": "greet",
+  "collaborators": [
+    "onur yanık <ya_onur@hotmail.com>"
+  ],
+  "version": "0.1.0",
+  "files": [
+    "greet_bg.wasm",
+    "greet.js",
+    "greet_bg.js",
+    "greet.d.ts"
+  ],
+  "module": "greet.js",
+  "types": "greet.d.ts",
+  "sideEffects": [
+    "./greet.js",
+    "./snippets/*"
+  ]
+}

@@ -1,5 +1,6 @@
 <script lang="ts">
-    import {greet} from '$lib/pkg/wasm_sum_bg'
+    import {sum} from '$lib/pkg/greet'
     
-    greet();
+    
 </script>
+<p>{sum(1,3)}</p>
