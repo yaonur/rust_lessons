@@ -1,0 +1,4 @@
+[workspace]
+members =['backend',"front/wasm/greet"]
+resolver = "1"
+
