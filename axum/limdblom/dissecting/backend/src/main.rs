@@ -22,6 +22,6 @@ struct Message {
 
 async fn handler() -> Json<Message> {
     Json(Message {
-        message : String::from("Hello, World!")
+        message : String::from("Hello, World!!")
     })
 }
